@@ -1,0 +1,56 @@
+$container-width: 1140px;
+@mixin mobile {
+    @media screen and (max-width: 767.98px) {
+        @content;
+    }
+}
+@mixin sm-to-md {
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin to-md {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+@mixin container-wid {
+    @media screen and (max-width: 1225px) and (min-width: 992px) {
+        @content;
+    }
+}
+::after,
+::before {
+    box-sizing: border-box;
+}
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
