@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { BsCodeSlash } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
 
 
 const Header = () => {
@@ -58,7 +60,7 @@ const Header = () => {
                         </li>
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>
-                        <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+                        <>{click ? <AiOutlineClose /> : <RxHamburgerMenu /> }</>
                     </div>
                 </div>
             </nav>
