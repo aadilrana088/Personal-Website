@@ -1,4 +1,6 @@
 $container-width: 1140px;
+$main_color: #FFE119;
+$black_color: #101010;
 @mixin mobile {
     @media screen and (max-width: 767.98px) {
         @content;
@@ -53,4 +55,8 @@ body {
     padding: 0;
     margin: 0;
     font-size: 1rem;
+    color: $black_color;
+}
+a {
+    text-decoration: none;
 }
