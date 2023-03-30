@@ -30,34 +30,41 @@
             display: flex;
             align-items: center;
             list-style: none;
-            gap: 0.5rem;
+            gap: 2rem;
             .nav-item {
-                padding: 1.3rem 0;
+                padding: 2.3rem 0 1rem;
                 height: 100%;
                 border-bottom: 3px solid transparent;
                 position: relative;
-                // &::after {
-                //     content: "";
-                //     display: block;
-                //     height: 3px;
-                //     width: 0;
-                //     background: transparent;
-                //     transition: width 0.7s ease, background-color 0.5s ease;
-                //     bottom: -4px;
-                //     position: absolute;
-                // }
-                // &:hover::after {
-                //     width: 100%;
-                //     background: $main_color;
-                // }
                 .nav-links {
                     color: $black_color;
                     text-decoration: none;
-                    padding: 0.5rem 1rem;
+                    // padding: 0.5rem 1rem;
                     font-weight: 500;
                     cursor: pointer;
                     &:hover {
                         color: $main_color;
+                        &::after {
+                            width: 100%;
+                            background: $main_color;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        display: block;
+                        height: 3px;
+                        width: 0;
+                        background: transparent;
+                        transition: width 0.7s ease, background-color 0.5s ease;
+                        bottom: -2px;
+                        position: absolute;
+                    }
+                    &.active {
+                        color: $main_color;
+                        &::after {
+                            width: 100%;
+                            background: $main_color;
+                        }
                     }
                 }
             }
