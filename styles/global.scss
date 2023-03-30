@@ -2,7 +2,8 @@
 .navbar {
     height: 80px;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 20;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -54,6 +55,7 @@
                     text-decoration: none;
                     padding: 0.5rem 1rem;
                     font-weight: 500;
+                    cursor: pointer;
                     &:hover {
                         color: $main_color;
                     }
@@ -102,4 +104,10 @@
             }
         }
     }
+}
+section {
+    height: 80vh;
+}
+.introduction {
+    margin-top: 80px;
 }
